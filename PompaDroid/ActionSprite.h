@@ -36,6 +36,9 @@
 @property(nonatomic,assign)float centerToSides;
 @property(nonatomic,assign)float centerToBottom;
 
+@property(nonatomic,assign)BoundingBox hitBox;
+@property(nonatomic,assign)BoundingBox attackBox;
+
 //action methods
 -(void)idle;
 -(void)attack;
@@ -45,5 +48,7 @@
 
 //scheduled methods
 -(void)update:(ccTime)dt;
+
+-(BoundingBox)createBoundingBoxWithOrigin:(CGPoint)origin size:(CGSize)size;
 
 @end

@@ -18,5 +18,6 @@
 }
 
 @property (nonatomic,weak) HUDLayer *hud;
+@property(nonatomic,strong)CCArray *robots;
 
 @end
