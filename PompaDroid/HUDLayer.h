@@ -15,6 +15,10 @@
 }
 
 // add after the closing curly bracket but before the @end
-@property(nonatomic,weak)SimpleDPad *dPad;
+@property (nonatomic,weak)SimpleDPad *dPad;
+@property (nonatomic,strong) CCProgressTimer *healthBar;
+@property (nonatomic, readwrite) BOOL isPaused;
+
+- (void)updateHealthBar:(CGFloat)percentage;
 
 @end

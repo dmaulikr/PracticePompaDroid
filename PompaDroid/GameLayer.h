@@ -14,10 +14,10 @@
 @interface GameLayer : CCLayer <SimpleDPadDelegate>{
   CCTMXTiledMap *_tileMap;
   CCSpriteBatchNode *_actors;
-  Hero *_hero;
 }
 
 @property (nonatomic,weak) HUDLayer *hud;
-@property(nonatomic,strong)CCArray *robots;
+@property (nonatomic,strong) CCArray *robots;
+@property (nonatomic,strong) Hero *hero;
 
 @end

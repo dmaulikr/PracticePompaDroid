@@ -19,6 +19,7 @@
     [self addChild:_hudLayer z:1];
     _hudLayer.dPad.delegate = _gameLayer;
     _gameLayer.hud = _hudLayer;
+    _gameLayer.hero.hud = _hudLayer;
   }
   return self;
 }

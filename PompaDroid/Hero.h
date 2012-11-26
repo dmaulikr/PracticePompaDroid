@@ -9,9 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "ActionSprite.h"
+#import "HUDLayer.h"
 
 @interface Hero : ActionSprite {
     
 }
+
+@property (nonatomic,weak) HUDLayer *hud;
 
 @end

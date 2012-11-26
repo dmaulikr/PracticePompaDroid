@@ -82,4 +82,9 @@
   [[SimpleAudioEngine sharedEngine] playEffect:@"pd_herodeath.caf"];
 }
 
+- (void)hurtWithDamage:(float)damage {
+  [super hurtWithDamage:damage];
+  [self.hud updateHealthBar:self.hitPoints];
+}
+
 @end
