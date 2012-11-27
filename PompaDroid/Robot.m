@@ -57,7 +57,7 @@
       [knockedOutFrames addObject:frame];
     }
     CCAnimation *knockedOutAnimation = [CCAnimation animationWithSpriteFrames:[knockedOutFrames getNSArray] delay:1.0/12.0];
-    self.knockedOutAction = [CCSequence actions:[CCAnimate actionWithAnimation:knockedOutAnimation], [CCBlink actionWithDuration:2.0 blinks:10.0], nil];
+    self.knockedOutAction = [CCSequence actions:[CCAnimate actionWithAnimation:knockedOutAnimation], [CCBlink actionWithDuration:2.0 blinks:10.0],  [CCFadeOut actionWithDuration:0.3] ,nil];
     
     self.walkSpeed = 80;
     self.centerToBottom = 39.0;

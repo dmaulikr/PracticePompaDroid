@@ -35,7 +35,7 @@
                                                               items:pauseItem, playItem, nil];
     
     CCMenu *menu = [CCMenu menuWithItems:toggleItem, nil];
-    menu.position = ccp(SCREEN.width-35, 25);
+    menu.position = ccp(SCREEN.width-35, SCREEN.height - 25);
     [self addChild:menu];
     _isPaused = NO;
   }
